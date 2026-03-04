@@ -1,0 +1,682 @@
+:root {
+    --japanese-red: #E63946;
+    --soft-gray: #F8F9FA;
+    --dark-zen: #1D3557;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-soft-danger {
+    background-color: rgba(230, 57, 70, 0.1);
+}
+
+.hero-section {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #fff 0%, #fef2f2 100%);
+    padding: 80px 0;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+    background: var(--japanese-red);
+    border-radius: 2px;
+}
+
+.btn-danger {
+    background-color: var(--japanese-red);
+    border-color: var(--japanese-red);
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c92a35;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3);
+}
+
+.hover-up {
+    transition: transform 0.3s ease;
+}
+
+.hover-up:hover {
+    transform: translateY(-10px);
+}
+
+.step-num {
+    width: 40px;
+    height: 40px;
+    background: var(--japanese-red);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #444;
+    padding: 0.5rem 1rem;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--japanese-red);
+    box-shadow: 0 0 0 0.25rem rgba(230, 57, 70, 0.1);
+}
+
+/* Section Styling */
+.jlpt-section {
+    padding: 60px 20px;
+    background: #f8f9fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.jlpt-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.jlpt-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.jlpt-description {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Cards */
+.level-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.level-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.level-card:hover {
+    transform: translateY(-5px);
+}
+
+.level-card h3 {
+    color: #d62828;
+    margin-bottom: 10px;
+}
+
+.level-card h4 {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.level-card ul {
+    padding-left: 18px;
+    margin-bottom: 15px;
+}
+
+.level-card ul li {
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.outcome {
+    background: #f1f3f5;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Why Choose */
+.why-section {
+    margin-top: 50px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.why-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.why-section ul {
+    columns: 2;
+    padding-left: 20px;
+}
+
+.why-section ul li {
+    margin-bottom: 8px;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #d62828;
+    font-size: 18px;
+}
+
+/* Section Background */
+.learner-section {
+    background: linear-gradient(135deg, #fff5f7, #ffe4e6);
+    padding: 80px 0;
+}
+
+/* Title */
+.learner-title {
+    font-weight: 700;
+    font-size: 32px;
+    background: linear-gradient(90deg, #dc2626, #f43f5e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Card Style */
+.learner-card {
+    position: relative;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 40px 25px;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.4);
+    overflow: hidden;
+}
+
+/* Glow Border Effect */
+.learner-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(45deg, #f43f5e, #dc2626);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.learner-card:hover::before {
+    opacity: 1;
+}
+
+/* Hover Animation */
+.learner-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(220,38,38,0.2);
+}
+
+/* Icon Circle */
+.icon-circle {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f43f5e, #dc2626);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.learner-card:hover .icon-circle {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Card Text */
+.learner-card h5 {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.learner-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Section Background */
+.curriculum-section {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    padding: 90px 0;
+    color: white;
+}
+
+/* Title */
+.curriculum-title {
+    font-size: 34px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #f43f5e, #dc2626);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.curriculum-subtitle {
+    color: #aaa;
+    font-size: 15px;
+}
+
+/* Card */
+.curriculum-card {
+    position: relative;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    padding: 35px 25px;
+    border: 1px solid rgba(255,255,255,0.08);
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+/* Glow Hover */
+.curriculum-card:hover {
+    transform: translateY(-12px);
+    border: 1px solid #f43f5e;
+    box-shadow: 0 15px 40px rgba(244,63,94,0.25);
+}
+
+/* Background Big Number */
+.bg-number {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.04);
+}
+
+/* Headings */
+.curriculum-card h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #f43f5e;
+}
+
+/* Text */
+.curriculum-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+
+
+/* Section Background */
+.curriculum-section {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    padding: 90px 0;
+    color: white;
+}
+
+/* Title */
+.curriculum-title {
+    font-size: 34px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #f43f5e, #dc2626);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.curriculum-subtitle {
+    color: #aaa;
+    font-size: 15px;
+}
+
+/* Card */
+.curriculum-card {
+    position: relative;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    padding: 35px 25px;
+    border: 1px solid rgba(255,255,255,0.08);
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+/* Glow Hover */
+.curriculum-card:hover {
+    transform: translateY(-12px);
+    border: 1px solid #f43f5e;
+    box-shadow: 0 15px 40px rgba(244,63,94,0.25);
+}
+
+/* Background Big Number */
+.bg-number {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.04);
+}
+
+/* Headings */
+.curriculum-card h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #f43f5e;
+}
+
+/* Text */
+.curriculum-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Section Background */
+.gallery-section {
+    background: #f8f6f2;
+    padding: 100px 0;
+}
+
+/* Heading */
+.gallery-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.gallery-subtitle {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Card */
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+/* Image */
+.gallery-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+/* Overlay */
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+/* Hover Effects */
+.gallery-card:hover img {
+    transform: scale(1.12);
+}
+
+.gallery-card:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Overlay Title */
+.gallery-overlay h5 {
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Background - Japanese paper tone */
+.japanese-footer {
+    background: #f5f1ea;
+    padding: 100px 0 50px;
+    position: relative;
+    font-family: 'Noto Serif JP', serif;
+    overflow: hidden;
+}
+
+/* Vertical Japanese Text */
+.vertical-jp {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: left top;
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: rgba(159,18,57,0.2);
+    font-weight: 600;
+}
+
+/* Logo */
+.footer-logo {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #9f1239;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.footer-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Section Titles */
+.footer-title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* Menu */
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 12px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: #9f1239;
+    padding-left: 6px;
+}
+
+/* Contact */
+.footer-contact {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Social */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #9f1239;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #9f1239;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* Bottom Text */
+.footer-bottom-text {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 13px;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+/* Subtle Top Brush Line */
+.japanese-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #9f1239, transparent);
+}
+
+
+/* Section */
+.testimonial-section {
+    background: #f9f6f1;
+    padding: 100px 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* Heading */
+.testimonial-jp {
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: #b91c1c;
+}
+
+.testimonial-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* Card */
+.testimonial-card {
+    background: #ffffff;
+    padding: 70px 35px 40px;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #eee;
+    transition: all 0.4s ease;
+}
+
+/* Hover */
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Student Image */
+.student-img {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.student-img img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Text */
+.testimonial-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+/* Student Info */
+.student-info h6 {
+    margin: 0;
+    font-weight: 600;
+    color: #111;
+}
+
+.student-info span {
+    font-size: 13px;
+    color: #b91c1c;
+}
+
+
+
+
+
