@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/logo.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('kaizen_theme');
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          }
+        } catch(e) {}
+      })();
+    </script>
+    
+    <!-- Primary Meta Tags -->
+    <title>Kaizen Japanese Language Academy | Learn Japanese • Work in Japan • Higher Education</title>
+    <meta name="title" content="Kaizen Japanese Language Academy | Learn Japanese • Work in Japan • Higher Education" />
+    <meta name="description" content="Build your career and higher education in Japan. Kaizen offers Japanese language training (N5-N2), interview prep, recruitment coordination and visa guidance for IT, SSW & TITP pathways, in collaboration with Apple.co Pvt. Ltd., Japan." />
+    <meta name="keywords" content="Japanese language school Coimbatore, Learn Japanese in Tamil, Jobs in Japan for Indians, SSW Visa, TITP Japan, Study in Japan, Kaizen Japanese Language Academy" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-black text-white font-sans antialiased selection:bg-red-600 selection:text-white min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

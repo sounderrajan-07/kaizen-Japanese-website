@@ -1,0 +1,42 @@
+[
+  {
+    "id": "testimonial-1",
+    "name": "Muzammil Ahmed B.E.",
+    "role": "Service Engineer • Cryogenic Department",
+    "company": "Sumitomo Heavy Industries (India) Pvt. Ltd.",
+    "avatar": "/images/testimonials/Muzammil Ahmed BE.jpeg",
+    "badge": "Corporate Japanese News Feature",
+    "jlpt": "JLPT Certified",
+    "quote": "Kaizen Japanese Language Academy transformed my career. The technical Japanese interview coaching and JLPT training prepared me directly for multinational engineering standards. Today, I am proud to be working at Sumitomo Heavy Industries and featured in their official Japanese publication!",
+    "location": "Bangalore & Japan Operations",
+    "pressProof": "/images/campus/Moment6.jpeg",
+    "featured": true,
+    "date": "2026-10-15"
+  },
+  {
+    "id": "testimonial-2",
+    "name": "Kaushik Nivesh P.",
+    "role": "IT & Software Engineering Pathway",
+    "company": "Japan Career Aspirant",
+    "avatar": "/images/testimonials/Kaushik Nivesh P.jpeg",
+    "badge": "Engineering Fast-Track",
+    "jlpt": "JLPT N4/N3 Track",
+    "quote": "Learning Japanese through Tamil and English at Kaizen was a game changer. The senseis break down complex grammar patterns with cultural context and daily conversational drills. The Coimbatore offline classroom ambiance is very supportive!",
+    "location": "Coimbatore Campus",
+    "featured": false,
+    "date": "2026-10-20"
+  },
+  {
+    "id": "testimonial-3",
+    "name": "Mr. Monesh M.",
+    "role": "Technical Professional",
+    "company": "Japan Placement Selected",
+    "avatar": "/images/testimonials/Mr.Monesh M.jpeg",
+    "badge": "100% Placement Coaching",
+    "jlpt": "JLPT Preparation",
+    "quote": "From having zero knowledge of Hiragana and Katakana to confidently giving a self-introduction in Japanese (Jikoshoukai), Kaizen guided me step by step. Their direct connection with Japanese companies gives students real career outcomes.",
+    "location": "Tamil Nadu to Japan",
+    "featured": false,
+    "date": "2026-10-25"
+  }
+]

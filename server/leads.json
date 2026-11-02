@@ -1,0 +1,44 @@
+[
+  {
+    "id": "lead-1793501333815",
+    "type": "Demo / Course Registration",
+    "name": "Test Student",
+    "email": "test.student@example.com",
+    "phone": "+91 8668136788",
+    "course": "JLPT N5 Weekend Batch",
+    "mode": "Offline (Coimbatore)",
+    "preferredTime": "Flexible",
+    "message": "Interested in Coimbatore offline batch",
+    "source": "Website Registration Form",
+    "date": "2026-11-01T02:48:53.815Z",
+    "status": "New"
+  },
+  {
+    "id": "demo-1",
+    "type": "Job Support",
+    "name": "Karthik Raja",
+    "email": "karthik.raja@example.com",
+    "phone": "+91 9876543210",
+    "pathway": "IT & Engineering Visa",
+    "qualification": "B.E. Computer Science",
+    "jlptLevel": "N5 in progress",
+    "location": "Coimbatore",
+    "message": "Looking for software engineering opportunities in Tokyo. Would like weekend offline classes.",
+    "date": "2026-10-31T02:48:38.716Z",
+    "status": "Contacted"
+  },
+  {
+    "id": "demo-2",
+    "type": "Higher Education",
+    "name": "Priya Sundaram",
+    "email": "priya.s@example.com",
+    "phone": "+91 9123456780",
+    "pathway": "Higher Japanese Language School",
+    "qualification": "B.Sc. Biotechnology",
+    "jlptLevel": "Beginner",
+    "location": "Tirupur / Coimbatore",
+    "message": "Interested in admission for October batch through Apple.co collaboration.",
+    "date": "2026-10-31T18:48:38.718Z",
+    "status": "New"
+  }
+]
